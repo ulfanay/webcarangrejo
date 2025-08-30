@@ -1,0 +1,119 @@
+/* Custom Filament Dashboard Styles */
+.fi-sidebar-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.fi-sidebar-header .fi-logo {
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.fi-sidebar-nav {
+    background: linear-gradient(to bottom, #f8fafc, #e2e8f0);
+}
+
+.fi-sidebar-group-label {
+    color: #4c51bf;
+    font-weight: 600;
+}
+
+.fi-sidebar-item-active {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: white !important;
+    border-radius: 0.5rem;
+    margin: 0.25rem 0.5rem;
+}
+
+.fi-sidebar-item-active .fi-icon {
+    color: white !important;
+}
+
+.fi-header {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.fi-widget {
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.fi-widget:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.fi-stats-overview-stat {
+    border-radius: 0.75rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.fi-stats-overview-stat-label {
+    color: #64748b;
+    font-weight: 500;
+}
+
+.fi-stats-overview-stat-value {
+    font-weight: 700;
+    font-size: 1.875rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fi-tables-table {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.fi-tables-header-cell {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-weight: 600;
+}
+
+.fi-btn {
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.fi-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Chart container styling */
+.chart-container {
+    position: relative;
+    height: 300px;
+    margin: 1rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .fi-sidebar {
+        background: white;
+    }
+    
+    .fi-widget {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Animation for loading states */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fi-widget {
+    animation: fadeIn 0.5s ease-out;
+}
